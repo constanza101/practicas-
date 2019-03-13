@@ -1,0 +1,71 @@
+p {
+  font-weight: bolder;
+  color: white;
+  font-family: monospace;
+}
+
+.body {
+  width: 100%;
+}
+
+ul.practica-extend, .carta00, .body, .carta01 {
+  background-color: green;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.carta01 {
+  font-size: 30px;
+}
+
+.header {
+  background-color: blue;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.body {
+  background-color: orange;
+}
+.body span {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.body p {
+  color: white;
+}
+
+.practica-bucle-for li:nth-child(1) {
+  background-color: #a1a1a1;
+}
+
+.practica-bucle-for li:nth-child(2) {
+  background-color: #a2a2a2;
+}
+
+.practica-bucle-for li:nth-child(3) {
+  background-color: #a3a3a3;
+}
+
+.practica-bucle-for li:nth-child(4) {
+  background-color: #a4a4a4;
+}
+
+.practica-bucle-for li:nth-child(5) {
+  background-color: #a5a5a5;
+}
+
+.practica-bucle-for li:nth-child(6) {
+  background-color: #a6a6a6;
+}
+
+.practica-bucle-for li:nth-child(7) {
+  background-color: #a7a7a7;
+}
+
+.practica-bucle-for li:nth-child(8) {
+  background-color: #a8a8a8;
+}
+
+/*# sourceMappingURL=index.css.map */

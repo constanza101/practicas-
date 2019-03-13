@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col col-md-8">
+
+          <div class="">
+            <input id="nuevaTarea" type="text" name="" value="">
+            <button (click)="addTask()" type="button" name="button"> + </button>
+          </div>
+
+          <div *ngFor="let task of tareas"  class="">
+                <p> {{task}} </p>
+                <button (click)="deleteTask('{{task}}')" type="button" name="button"> delete </button>
+          </div>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>

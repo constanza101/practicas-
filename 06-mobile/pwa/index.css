@@ -1,0 +1,28 @@
+/*disable pull-to-refresh:*/
+body{
+  overscroll-behavior-y:contain;
+}
+
+
+.imagen {
+  height: 200px;
+  margin: 20px;
+  padding: 20px;
+  margin: auto;
+  display: block;
+}
+
+.container-choose{
+  background-color: pink;
+  height: 100vh;
+}
+
+.container-results{
+  background-color: teal;
+  height: 100vh;
+}
+
+h2{
+  text-align: center;
+  color: white;
+}

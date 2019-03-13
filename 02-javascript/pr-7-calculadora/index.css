@@ -1,0 +1,12 @@
+.calculadora {
+  text-align: center;
+  margin-top: 200px;
+  border: 2px solid black;
+  padding: 40px;
+  font-size: 50px;
+}
+.calculadora .acciones {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

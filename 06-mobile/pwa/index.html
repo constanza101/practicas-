@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  meta tag to avoid automatical translation on pur app -->
+    <meta name="google" content="notranslate">
+    <!-- to have a custom launch screen, your app needs to be mobile web app capable, which can be accomplished with the following meta tag -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Piedra, papel o tijera</title>
+
+    <!-- Splash Screens for iOS -->
+    <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+
+
+
+
+
+
+  </head>
+  <body>
+
+    <div class="container container-choose">
+  <div class="row align-items-start">
+    <div class="col-sm-12 col-md-3">
+      <div id="piedra" class="img">
+        <img src="images/piedra.png" class="imagen piedra" alt="">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+        <div id="papel" class="img" >
+          <img src="images/papel.png" class="imagen papel">
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <div id="tijeras" class="img">
+        <img src="images/tijeras.png" class="imagen tijeras"alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container container-results" style="display:none">
+<div class="row align-items-start">
+
+
+
+<div class="col-sm-12 col-md-3">
+  <div id="chosen" class="">
+  </div>
+</div>
+
+<div class="col-sm-12 col-md-3">
+  <div id="results" class="">
+
+  </div>
+</div>
+
+<div class="col-sm-12 col-md-3">
+    <div id="random" class="" >
+    </div>
+</div>
+
+</div>
+<button onclick="restart()" style="margin-top: 25px" type="button" class="btn btn-primary btn-lg btn-block">Restart</button>
+<button onclick="clearStorage()" type="button" style="margin-top: 25px" class="btn btn-secondary btn-lg btn-block">Reiniciar puntuación</button>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/popper.js"></script>
+    <script src="/assets/bootstrap.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+  </body>
+</html>

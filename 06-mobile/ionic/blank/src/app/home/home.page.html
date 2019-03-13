@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+
+<!-- List of Sliding Items -->
+<ion-list>
+  <ion-item-sliding *ngFor="let taskID of objectKeys(todo)">
+    <ion-item>
+      <ion-label>{{this.todo[taskID].task_name}}</ion-label>
+      <ion-checkbox (ionChange)="check_task(this.todo[taskID].task_name)" checked="{{this.todo[taskID].checked}}" slot="start"></ion-checkbox>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Delete</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+</ion-list>
+<ion-fab vertical="center" horizontal="end" slot="fixed">
+  <ion-fab-button (click)="addTask()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+</ion-content>

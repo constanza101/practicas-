@@ -1,0 +1,12 @@
+$climas: ("soleado", "nublado", "lluvioso", "nieve", "viento");
+
+@each $tiempo in $climas {
+  .#{$tiempo}{ background-image:url('/images/#{$tiempo}.jpg') }
+}
+
+
+@for $i from 1 to 5{
+  .Tiempo-#{$i}{ background-image:url('/images/Tiempo-#{$i}.jpg') }
+}
+
+@while

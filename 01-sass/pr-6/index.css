@@ -1,0 +1,26 @@
+body {
+  background-color: aqua;
+}
+
+.padre {
+  display: flex;
+  width: 700px;
+  background-color: white;
+  padding: 10px;
+  border: 10px solid blue;
+  margin: 20px auto;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap-reverse;
+}
+
+.hijo {
+  color: white;
+  margin: 5px;
+  background-color: red;
+  text-align: center;
+  width: 200px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=index.css.map */

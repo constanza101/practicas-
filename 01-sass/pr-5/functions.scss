@@ -1,0 +1,17 @@
+
+@function modoEspecial($modo, $screensize){
+$fondo: white;
+  @if $modo == "light"{
+    $fondo:white;}
+  @else{
+    @if $modo == "dark"{
+        $fondo:black;}
+    @else{
+      @if $modo == "daltonic"{
+        $fondo:green;
+        @if $screensize < 500px {$fondo:yellow}
+      }
+    }
+  }
+  @return $fondo;
+}

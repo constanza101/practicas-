@@ -1,0 +1,260 @@
+
+//fotos portada
+
+$num-images: 7;
+
+@for $i from 1 to $num-images {
+  .col-projects#{$i} {
+    background-image: url(project-img($i));
+  }
+}
+
+//fotos pensando
+
+header{
+  height: 200px;
+  background-color: #1D3783;
+
+}
+
+
+.imagen{
+  border:2px solid black;
+  margin: 30px;
+  align-content: center;
+}
+
+//fotos resultado
+
+
+@mixin fotos {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@function project-img($bg-i) {
+  $bg-url: "../images/project#{$bg-i}.jpg";
+  @return $bg-url;
+}
+
+
+.preparados{
+  background-image: url(images/preparados1.gif);
+}
+
+$num-preparados: 7;
+
+@for $i from 1 to $num-images {
+  .col-projects#{$i} {
+    background-image: url(project-img($i));
+  }
+}
+
+.btn{
+  margin: 100px;
+}
+
+
+
+
+/////////////**********************+
+
+
+body {
+  font-family: 'Dosis', sans-serif;
+  margin:0;
+  align-content: center;
+  text-align: center;
+
+  .container{
+    max-width: 100%;
+    padding: 0;
+}
+
+  .container-header{
+      .parallax-overlay{
+        width: 100%;
+        height: 100%;
+        background:black;
+        position: relative;
+        opacity: 0.2;
+      }
+
+      .col-title {
+        position: absolute;
+        padding:20%;
+        text-shadow: 2px 2px 4px #000000;
+      }
+  }
+}
+
+  .row-parallax{
+    //background-image: url("../images/parallax-08.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    margin:0;
+
+      h2 {
+        font-size: 60px;
+      }
+      h1{
+        font-size: 30px;
+      }
+    }
+
+    .about-me {
+        padding-top: 30px;
+        box-shadow: 0 -50px 50px -50px #000;
+        margin:0;
+
+        h1{
+          font-size:25px;
+          color:$secondary-color;
+          font-weight: 350;
+        }
+        a:hover{
+          text-decoration: none;
+        }
+
+        h2{
+          font-size:40px;
+          color:$primary-color;
+        }
+
+        h3{
+          color: $primary-color;
+          font-size:30px;
+        }
+
+        p{
+          font-size:40px;
+          color:$secondary-color;
+        }
+
+        .row-about-me{
+          margin: 10px;
+        }
+
+        .mi-foto {
+            width: 200px;
+            border-radius: 5%;
+            box-shadow: 0 0 30px #000;
+        }
+
+        .col{
+          padding: 70px;
+
+        }
+
+        .row-cv{
+          background-color: white;
+          color: black;
+          font-size: 15px;
+        }
+
+        .btn{
+          margin-bottom: 70px;
+          a {
+            color: #28a745;
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: white;
+            text-decoration: underline;
+          }
+
+          a:active {
+            color: white;
+          }
+
+          a:visited {
+            color: #28a745;
+          }
+        }
+    }
+
+
+
+    .projects {
+        color:white;
+
+        h2{
+          font-size:40px;
+          color:$primary-color;
+          padding-bottom: 15px;
+        }
+
+        .col-pr {
+          @include projects;
+          height: 400px;
+          padding: 0;
+          position:relative;
+          cursor: pointer;
+
+          .hover-overlay{
+            background: #000;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            z-index: 80;
+            width: 100%;
+          }
+
+
+          .project-title{
+            z-index: 100;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            padding: 30%;
+            text-shadow: 2px 2px 4px #000000;
+            opacity: 0;
+          }
+
+        }
+
+         .col-pr:hover {
+           .hover-overlay{
+             opacity: 0.6;
+           }
+           .project-title{
+             opacity:1;
+           }
+         }
+
+
+
+
+        @for $i from 1 to $num-project {
+          .col-projects#{$i} {
+            background-image: url(project-img($i));
+          }
+        }
+
+
+    }
+
+    .contact-me {
+      padding: 40px;
+
+      h3{
+        color: $primary-color;
+        font-size:30px;
+      }
+      .textarea{
+        padding-top: 20px;
+      }
+    }
+}
+
+.page-footer{
+  background-color: #555;
+  color:white;
+}

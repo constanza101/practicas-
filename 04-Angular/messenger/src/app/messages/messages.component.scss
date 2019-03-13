@@ -1,0 +1,38 @@
+.contenedor {
+  border: 2px solid yellow;
+  margin: 2px;
+}
+
+
+.container{
+    border: 2px solid blue;
+}
+
+.row {
+    border: 2px solid green;
+    margin: 2px;
+
+}
+
+.col{
+    border: 2px solid black;
+    margin: 2px;
+}
+
+.columna{
+    height: 500px;
+    position:relative;
+    .contieneMensajes{
+      overflow:scroll;
+      height:90%;
+      border: 2px solid red;
+
+    }
+}
+
+
+
+.enviarMensajes{
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,29 @@
+/** CSS */
+
+.item-1 {
+  width: 10px;
+  font-size: 10px;
+}
+.item-2 {
+  width: 20px;
+  font-size: 20px;
+}
+.item-3 {
+  width: 30px;
+  font-size: 30px;
+}
+.item-4 {
+  width: 40px;
+  font-size: 40px;
+}
+
+
+
+/** SASS */
+
+@for $i from 1 through 4 {
+  .item-#{$i} {
+    width: 10px * $i;
+    font-size: 10px * $i;
+  }
+}

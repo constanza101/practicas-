@@ -1,0 +1,8 @@
+ANGULAR
+ cd Desktop/workspace/practicas/04-Angular
+cli:
+ng new my-project <-- creo un nuevo proyecto
+cd my-project <-- entro en la carpeta de mi proyecto, ya puedo trabajar en el proy.
+ng serve <--- construye la app y un servidor local, y pone la app en marcha. Puedo ver los cambios en mi app instantaneamente en mi navegador.
+ng build  <--- generla la app cuando está lista.
+ng generate component nombredelcomponente <-- crea un nuevo componente

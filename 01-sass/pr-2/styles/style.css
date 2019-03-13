@@ -1,0 +1,86 @@
+html {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #00539F;
+}
+html body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+html body h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
+  color: green;
+  font-size: 40px;
+}
+html body img {
+  display: block;
+  margin: 0 auto;
+}
+html body p, html body li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.item-1 {
+  font-size: 30px;
+  color: #00539F;
+}
+
+.item-2 {
+  font-size: 35px;
+  color: #FF9500;
+}
+
+.item-3 {
+  font-size: 40px;
+  color: green;
+}
+
+.firefox-logo-small {
+  width: 100px;
+  height: 100px;
+  margin: 33px;
+}
+
+.firefox-logo-medium {
+  width: 200px;
+  height: 200px;
+  margin: 67px;
+}
+
+.firefox-logo-large {
+  width: 300px;
+  height: 300px;
+  margin: 100px;
+}
+
+.button-info {
+  height: 10;
+  width: 20;
+}
+
+.button-alert {
+  height: 20px;
+  width: 40;
+}
+
+.button-succes {
+  height: 30px;
+  width: 60;
+}
+
+h2 {
+  color: green;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

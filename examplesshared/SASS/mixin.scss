@@ -1,0 +1,69 @@
+/** CSS */
+body {
+  width: 100%;
+  height: 100%;
+}
+p {
+  width: 100%;
+  height: 100%;
+}
+
+
+/** SASS */
+@mixin awesome {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @include awesome;
+}
+p {
+  @include awesome;
+}
+
+
+
+
+
+
+
+
+
+
+/** CSS */
+body {
+  width: 960px;
+  height: 100%;
+}
+p {
+  width: 100%;
+  height: 100%;
+}
+
+
+/** SASS */
+@mixin awesome($w: 100%, $h: 100%) {
+  width: $w;
+  height: $h;
+}
+
+body {
+  @include awesome(960px);
+}
+p {
+  @include awesome;
+}
+
+
+
+
+@mixin radius($radius){
+  border-radius: $radius;
+}
+.navigation {
+  @include radius(10px);
+}
+.content {
+  @include radius(32px);
+}

@@ -1,0 +1,83 @@
+// config variables
+$theme: "clear";
+$device: "desktop";
+
+$primary-color: blue;
+$secondary-color: orange;
+$color-p: white;
+
+//imports
+
+
+@import "paragraph";
+
+
+//extends
+
+%base {
+  @if $device == "desktop" {width: 100%;}
+  @else {width: 50%;}
+}
+
+%cartas {
+  background-color: green;
+  border: 2px solid black;
+  margin: 5px;
+
+}
+
+%baraja{
+  @extend %cartas;
+  font-size: 30px;
+
+}
+
+// main
+
+.body {@extend %base;}
+
+
+.header {
+  @if $theme == "clear"{
+    background-color: $primary-color;
+  }
+  @else {
+    background-color: $secondary-color;
+  }
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.body {
+  @extend %cartas;
+  background-color: $secondary-color;
+  span{
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  p {
+    color: $color-p;
+  }
+}
+
+.carta00 {
+  @extend %cartas;
+}
+
+.carta01 {
+  @extend %baraja;
+}
+
+//directivas de control: direcciones que le das al programa para controlar hacia donde va.
+
+ul.practica-extend {
+  @if 5 < 3 { @extend %baraja; }
+  @else { @extend %cartas;}
+}
+
+// bucle for
+
+@for $i from 1 through 8 {
+  .practica-bucle-for li:nth-child(#{$i}) {background-color: #a#{$i}a#{$i}a#{$i}}
+}

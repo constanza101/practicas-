@@ -1,0 +1,15 @@
+/** CSS */
+.my-module {
+  padding: 15px;
+}
+
+
+/** SASS */
+@function my-calculation-function($some-number, $another-number){
+  @return $some-number + $another-number
+}
+
+.my-module {
+   padding: my-calculation-function(10px, 5px);
+ }
+

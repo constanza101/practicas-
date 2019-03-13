@@ -1,0 +1,151 @@
+@function color-fuente($tamano-fuente){
+    $color-return: purple;
+
+    @if ($tamano-fuente >= 20px){
+      $color-return:green;
+    }
+
+    @if ($tamano-fuente <= 10px){
+      $color-return: red;
+    }
+
+  @return $color-return;
+}
+
+
+//1. sustituir colores por variables:
+$main-color: #00539F;
+$secondary-color: #FF9500;
+
+//2. Anidar las reglas de estilos dentro de una.
+
+
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $main-color;
+
+  body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: $secondary-color;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+      margin: 0;
+      padding: 20px 0;
+      color: $main-color;
+      text-shadow: 3px 3px 1px black;
+      color: color-fuente(40px);
+      font-size: 40px;
+    }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      p, li {
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 1px;
+      }
+  }
+}
+
+
+@for $i from 1 through 3 {
+  .item-#{$i} {
+    font-size: 25px + $i * 5;
+
+    @if $i == 1 {
+      color: $main-color;
+    } @else if $i == 3 {
+        color:green;
+      }
+     @else {
+      color: $secondary-color;
+    }
+  }
+}
+
+//function
+
+
+$logo-small: 100px;
+$logo-medium: 200px;
+$logo-large: 300px;
+
+
+@function img-margin ($tamano-icono){
+  @return round($tamano-icono / 3);
+}
+
+.firefox-logo-small{
+  width: $logo-small;
+  height: $logo-small;
+  margin: img-margin($logo-small);
+}
+
+.firefox-logo-medium{
+  width: 200px;
+  height: 200px;
+  margin: img-margin(200px);
+}
+
+.firefox-logo-large{
+  width: $logo-large;
+  height: $logo-large;
+  margin: img-margin($logo-large)
+}
+
+
+
+
+
+
+
+
+
+// function
+
+@function button-width ($numero1){
+  @return round($numero1 * 2) ;
+}
+
+.button-info{
+  $tamano-info: 10;
+  height: $tamano-info;
+  width:  button-width($tamano-info);
+}
+
+.button-alert{
+  height: 20px;
+  width: button-width(20);
+}
+
+.button-succes{
+  height: 30px;
+  width: button-width(30);
+}
+
+//otro ejemplo con los titulos:
+
+
+
+//declaro una variable:
+
+
+
+
+
+    h2 {
+      color: color-fuente(20px);
+      font-size: 20px;
+    }
+
+    h1 {
+
+    }

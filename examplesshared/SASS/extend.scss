@@ -1,0 +1,19 @@
+/** CSS */
+.awesome, body, p {
+  width: 100%;
+  height: 100%;
+}
+
+
+/** SASS */
+.awesome {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @extend .awesome;
+}
+p {
+  @extend .awesome;
+}

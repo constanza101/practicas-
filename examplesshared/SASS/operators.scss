@@ -1,0 +1,30 @@
+/** CSS */
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%;
+}
+
+
+/** SASS */
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}

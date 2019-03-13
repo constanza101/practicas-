@@ -1,0 +1,76 @@
+.contenedor-uno, .contenedor-dos  {
+  height: 200px;
+}
+
+.contenedor-uno{
+  background-color: red;
+}
+
+.contenedor-dos{
+  background-color: green;
+}
+
+
+
+@media (max-width: 1000px) {
+.contenedor-uno, .contenedor-dos  {
+  width: 100%;
+  }
+}
+
+@media (min-width: 1100px) {
+.contenedor-uno, .contenedor-dos  {
+  width: 50%;
+}
+}
+
+
+//mixin
+
+.button-info, .button-alert, .button-succes{
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  margin:10px;
+}
+
+@mixin button-color ($color1, $color2 ) {
+  border: 2px solid $color1;
+  background-color: $color2;
+  color: $color1;
+}
+
+
+.button-info{
+  @include button-color (orange, rgb(3,4,7))
+}
+
+.button-alert{
+  @include button-color (black, red)
+}
+
+.button-succes{
+  @include button-color (blue, green)
+}
+
+//function
+
+@function button-width ($numero1){
+  @return round($numero1 * 2) ;
+}
+
+.button-info{
+  $tamano-info: 10;
+  height: $tamano-info;
+  width: button-width($tamano-info);
+}
+
+.button-alert{
+  height: 20px;
+  width: button-width(20);
+}
+
+.button-succes{
+  height: 30px;
+  width: button-width(30);
+}

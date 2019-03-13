@@ -1,0 +1,25 @@
+/** CSS */
+
+$type: monster;
+p {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+
+
+$color1: #f9f9f9;
+p {
+  @if (lightness($color1) < 30) {
+    background-color: white
+  } @else {
+    background-color: black
+  }
+}

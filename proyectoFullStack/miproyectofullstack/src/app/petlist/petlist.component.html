@@ -1,0 +1,19 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Petname</th>
+      <th scope="col">Pettype</th>
+      <th scope="col">OwnerID</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let pet of pets">
+      <th scope="row">{{pet.idpets}}</th>
+      <td>{{pet.petname}}</td>
+      <td>{{pet.pettype}}</td>
+      <td>{{pet.usuarios_idusuarios}}</td>
+    </tr>
+  </tbody>
+</table>

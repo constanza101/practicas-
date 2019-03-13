@@ -1,0 +1,62 @@
+/** CSS */
+.column-grid-1{
+  width: 60px;
+}
+
+.column-grid-2 {
+  width: 150px;
+}
+
+.column-grid-3 {
+  width: 240px;
+}
+
+.column-grid-4 {
+  width: 330px;
+}
+
+.column-grid-5 {
+  width: 420px;
+}
+
+.column-grid-6 {
+  width: 510px;
+}
+
+.column-grid-7 {
+  width: 600px;
+}
+
+.column-grid-8 {
+  width: 690px;
+}
+
+.column-grid-9 {
+  width: 780px;
+}
+
+.column-grid-10 {
+  width: 870px;
+}
+
+.column-grid-11 {
+  width: 960px;
+}
+
+.column-grid-12 {
+  width: 1050px;
+}
+
+
+/** SASS */
+
+$i: 1;
+$column-width: 60px;
+
+@while $i < 13 {
+    .column-grid-#{$i} {
+      width: $column-width;
+    }
+    $column-width: $column-width + 90px;
+    $i: $i + 1;
+}

@@ -1,0 +1,78 @@
+// funciones
+
+@function myFunction($var1) {
+  $var3: white;
+  @if $var1 <=10px{
+    $var3:green
+   }
+  @else{
+    @if $var1 >= 20px {
+      $var3:red
+
+    }
+    @else {
+      $var3:black
+    }
+  }
+  @return $var3;
+}
+
+
+.my-p-1{
+  color: myFunction(8px);
+}
+.my-p-2{
+  color: myFunction(12px);
+  background-color: myFunction(8px);
+}
+
+.my-p-3{
+  color: myFunction(30px);
+}
+
+/// bucle @for
+
+@function myFunction2() {
+  $var3: red;
+  @for $i from 1 to 10 {
+    @if $i > 5 {$var3: orange}
+    @else {
+      @if $i < 5 {$var3: yellow}
+      @else {$var3:green}
+    }
+  }
+  @return $var3;
+}
+
+
+
+h1{
+  color: myFunction2()
+}
+
+h2 {
+  color: myFunction2()
+}
+
+
+@function modoEspecial($modo){
+$fondo: white;
+  @if $modo == "light"{
+    $fondo:white;}
+  @else{
+    @if $modo == "dark"{
+        $fondo:black;}
+    @else{
+      @if $modo == "daltonico"{
+        $fondo:green;
+      }
+    }
+  }
+  @return $fondo;
+}
+
+
+
+.background-color{
+  background-color: modoEspecial(daltonico);
+}

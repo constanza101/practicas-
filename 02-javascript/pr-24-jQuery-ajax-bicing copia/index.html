@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" type="image/png" href="images/bicing11.png"/>
+	<title>Bicing Lite</title>
+
+</head>
+<body>
+
+<header> </header>
+
+
+
+<div class="container">
+  <div class="row rowCheck">
+    <div class="col"></div>
+    <div class="col-8 ">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input " id="favourites" >
+        <label class="custom-control-label" for="favourites">Show my favourite stations</label>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+
+  <div class="row">
+
+    <div class="col">
+    </div>
+
+    <div class="col-8">
+      <button class="btn btn-outline-dark" onclick="getApiStations()" type="button" name="button">update</button>
+<!--
+      <button class="btn btn-outline-dark" onclick="changeTheme()" type="button" name="button">dark theme</button>
+-->
+      <!-- Default indeterminate CHECKBOX BOOTSTRAP  -->
+
+
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Address</th>
+            <th scope="col">Bikes/Slots</th>
+            <th scope="col">Status</th>
+            <th scope="col">Nearby</th>
+            <th scope="col">  </th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col">
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+<footer>
+
+</body>
+</html>
+
+
+
+
+
+<script type="text/javascript" src="index.js"> </script>

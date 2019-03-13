@@ -1,0 +1,37 @@
+.soleado {
+  background-image: url("/images/soleado.jpg");
+}
+
+.nublado {
+  background-image: url("/images/nublado.jpg");
+}
+
+.lluvioso {
+  background-image: url("/images/lluvioso.jpg");
+}
+
+.nieve {
+  background-image: url("/images/nieve.jpg");
+}
+
+.viento {
+  background-image: url("/images/viento.jpg");
+}
+
+.Tiempo-1 {
+  background-image: url("/images/Tiempo-1.jpg");
+}
+
+.Tiempo-2 {
+  background-image: url("/images/Tiempo-2.jpg");
+}
+
+.Tiempo-3 {
+  background-image: url("/images/Tiempo-3.jpg");
+}
+
+.Tiempo-4 {
+  background-image: url("/images/Tiempo-4.jpg");
+}
+
+/*# sourceMappingURL=index.css.map */
