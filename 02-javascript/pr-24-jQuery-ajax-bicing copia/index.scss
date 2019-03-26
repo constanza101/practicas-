@@ -1,11 +1,25 @@
 $primary-color: #e3001b;
 
+.contenedor{
+  font-size: 2rem;
+}
+
+th {
+  padding:5px;
+}
+
+
 header{
   height: 77px;
   background-image: url(images/bicing6.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-color: $primary-color;
+
+  @media screen and (max-width: 420px) {
+  background-size: contain;
+  }
+
 }
 
 
@@ -28,9 +42,9 @@ td label input[type="checkbox"] {
 }
 
 .custom-checkbox {
-  margin-left: 2em;
   position: relative;
   cursor: pointer;
+
 }
 
 .custom-checkbox .fa-star {

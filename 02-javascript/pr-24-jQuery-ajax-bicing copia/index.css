@@ -1,9 +1,22 @@
+.contenedor {
+  font-size: 2rem;
+}
+
+th {
+  padding: 5px;
+}
+
 header {
   height: 77px;
   background-image: url(images/bicing6.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #e3001b;
+}
+@media screen and (max-width: 420px) {
+  header {
+    background-size: contain;
+  }
 }
 
 .rowCheck {
@@ -25,7 +38,6 @@ td label input[type=checkbox] {
 }
 
 .custom-checkbox {
-  margin-left: 2em;
   position: relative;
   cursor: pointer;
 }

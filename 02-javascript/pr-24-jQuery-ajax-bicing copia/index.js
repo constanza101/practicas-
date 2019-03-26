@@ -49,18 +49,18 @@ function showList(){
                   '"/><i class="far fa-star"></i><i class="fas fa-star"></i></label>';
 
                   var nearBtn = '<a class="nearBtn" nearbyStations="'+nearbyStations+
-                  '"><i class="far fa-star"></i></a>';
+                  '"><i class="fas fa-bicycle"></i></a>';
 
                 // var nearby = <i class="fas fa-chevron-circle-down"></i>
 
   //si no existe, agregamos la estación a la lista (append)
                   $("tbody").append(
                     '<tr class="trow" id="tr_'+id+'" nearbyStations="'+nearbyStations+'"><th scope="row">' + id +
-                    '</th><td><a target="_blank" href="'
+                    '</th><td class="px-1"><a target="_blank" href="'
                      + my_url + '">' + streetName + ', ' + streetNumber +
-                     '</a></td><td><span id=' + id + '>' + bikes + '</span>/'
-                     + slots + '</td><td>' + status + '</td><td>' + nearBtn
-                      + '</td><td>' + star + '</td></tr>');
+                     '</a></td><td class="px-1"><span id=' + id + '>' + bikes + '</span>/'
+                     + slots + '</td><td class="px-1">' + status + '</td><td class="px-1">' + nearBtn
+                      + '</td><td class="px-1">' + star + '</td></tr>');
 
 
 /*
